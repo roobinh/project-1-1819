@@ -1,3 +1,5 @@
+console.log("Succesfully imported: index.js");
+
 import { range } from "./modules/utils.js";
 import { detectPingError, buildPong, supressPingError } from "./modules/ping.js";
 import PromiseStream from "./modules/PromiseStream.js";
@@ -8,7 +10,7 @@ export class API {
 	constructor ({
 		CORSProxy = "https://cors-anywhere.herokuapp.com/",
 		baseURL = "https://zoeken.oba.nl/api/v1/",
-		key = "NO_KEY_PROVIDED"
+		key = "1e19898c87464e239192c8bfe422f280"
 	} = {}) {
 		this._URL = CORSProxy
 			+ baseURL
@@ -88,7 +90,7 @@ export class API {
 			.catch(supressPingError);
 	}
 
-	async createStream (partial, options = {}) {
+	async createStream(partial, options = {}) {
 		const {
 			batches,
 			builtURL,
