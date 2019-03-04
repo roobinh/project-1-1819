@@ -1,5 +1,6 @@
 # Project 1 @cmda-minor-web · 2018-2019
-Idee: Mogelijkheid om boek op te zoeken, om vervolgens de beschikbaarheid weer te geven.
+Mogelijkheid om boek op te zoeken, om vervolgens de beschikbaarheid weer te geven.
+
 ```javascript
 if(boek == beschikbaar) {
     show("welke bibliotheek" + "locatie in die bibliotheek");
