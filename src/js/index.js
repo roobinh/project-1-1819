@@ -108,7 +108,7 @@ export class API {
 			.catch(API.logError);
 	}
 
-	async createIterator (partial, options = {}) {
+	async createIterator(partial, options = {}) {
 		const {
 			batches,
 			builtURL,

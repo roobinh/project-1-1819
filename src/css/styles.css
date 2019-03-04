@@ -1,1 +1,15 @@
+/* General Styling */
+* {
+	font-family: 'Inconsolata', monospace;
+}
 
+.title {
+    text-align: center;
+    margin: auto;
+}
+
+.form {
+    text-align: center;
+}
+
+.

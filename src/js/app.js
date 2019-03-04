@@ -10,11 +10,22 @@ console.log("Succesfully imported: app.js");
         key: "1e19898c87464e239192c8bfe422f280"
     });
 
-    const stream = await api.createStream("search/banaan{5}");
-  
-    stream
-    //   .pipe(stringify)
-      .pipe(console.log)
-      .catch(console.error);
+    async function searchBook(name) {
+        console.log("Search Book: " + name);
+        console.log("API is loading...");
+
+        const stream = await api.createStream("search" + '/' + name + "{5}");
+
+        stream
+            .pipe(console.log)
+            .catch(console.error);
+    }
+
+    document.getElementById("search").addEventListener("click", function(){
+        name = document.getElementById("input").value;
+        searchBook(name);
+    });
+    
   })();
+
 
