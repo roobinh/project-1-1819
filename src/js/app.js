@@ -15,8 +15,9 @@ function addToDocument(response) {
         book.setAttribute('class', 'book');
 
         var title = document.createElement('h2');
+        // title = title.split('/');
         title.setAttribute('class', 'title');
-        title.innerHTML = response[i]['title']['full'];
+        title.innerHTML = response[i]['title']['full'].split('/')[0];
 
         var cover = document.createElement('img');
         cover.setAttribute('class', 'cover');
@@ -26,7 +27,11 @@ function addToDocument(response) {
         var desc = document.createElement('p');
         desc.setAttribute('class', 'description');
         var description = response[i]['summary'];
-        desc.innerHTML = description;
+        if(typeof description !== 'undefined') {
+            desc.innerHTML = description.slice(0, 200);
+        } else {
+            desc.innerHTML = "Description not available";
+        }
 
         book.appendChild(title);
         book.appendChild(cover);
@@ -49,7 +54,7 @@ function addToDocument(response) {
 
         console.log("Searching Book: " + name + "...");
         
-        const stream = await api.createStream("search/banaan{9}");
+        const stream = await api.createStream("search/" + name + "{9}");
 
         stream
             .pipe(addToDocument)
