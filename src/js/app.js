@@ -1,6 +1,8 @@
 
 import {API} from "./index.js";
 
+(function() {
+
 console.log("Succesfully imported: app.js");
 
 function addToDocument(response) {  
@@ -65,4 +67,5 @@ function addToDocument(response) {
         name = document.getElementById("input").value;
         searchBook(name);
     });
+})()
 })();   
