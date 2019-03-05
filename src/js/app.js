@@ -60,8 +60,6 @@ function addToDocument(response) {
             .pipe(addToDocument)
             .catch(console.error);
     }
-
-	
         
     document.getElementById("search").addEventListener("click", function(){
         name = document.getElementById("input").value;
