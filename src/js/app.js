@@ -30,6 +30,22 @@ if(window.location.hash === "") {
         }
     }
 
+    const router = {
+        home: function() {
+			console.log('Home pagina.');
+        },
+
+        availability: function(id) {
+            console.log("Availability pagina. ID = " + id);
+            
+            var books = document.getElementById('books');
+            books.setAttribute('style', 'display: none');
+
+            var loader = document.getElementById('loader');
+            loader.setAttribute('style', 'display: block;');
+        }
+    }
+
     const renderer = {
         addToDocument: function(response) {
             console.log(response)
@@ -95,15 +111,16 @@ if(window.location.hash === "") {
     //-----------VARIABLES-----------//
     const render = Object.create(renderer);
     const wrap = Object.create(wrapper);
+    const route = Object.create(router);
 
     //-----------ROUTING-----------//
     routie({
 		'home': function() {
-			console.log('Home pagina!');
+            route.home();
 		},
 		'availability/?:id': function(id) {
-			id = id.substr(4) // '?:id=8892374' -> '8892374'
-			// route.pokemonID(id);
+            id = id.substr(4) // '?:id=8892374' -> '8892374'
+            route.availability(id);
 		}
     });
     
