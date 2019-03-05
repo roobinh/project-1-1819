@@ -51,6 +51,11 @@ body {
     margin: 10px;
 }
 
+a {
+    position: absolute;
+    bottom: 0;
+}
+
 /* Loader */
 .lds-dual-ring {
     display: none;

@@ -33,13 +33,12 @@ if(window.location.hash === "") {
     const renderer = {
         addToDocument: function(response) {
             console.log(response)
-
-            var books = document.getElementById('books');
             var loader = document.getElementById('loader');
             loader.setAttribute('style', 'display: none;');
+
+            var books = document.getElementById('books');
     
             for(var i=0; i<response.length ; i++) {
-
                 var clickable = document.createElement('a');
                 var identifiers = response[i]['identifiers'];
 
@@ -52,7 +51,8 @@ if(window.location.hash === "") {
                 }  
 
                 clickable.setAttribute('href', '#availability?id=' + id);
-                
+                clickable.innerHTML = "Beschikbaarheid";
+
                 var book = document.createElement('div');
                 book.setAttribute('class', 'book');
     
@@ -85,10 +85,9 @@ if(window.location.hash === "") {
                 book.appendChild(title);
                 book.appendChild(cover);
                 book.appendChild(desc);
+                book.appendChild(clickable)
                 
-                clickable.appendChild(book);
-
-                books.appendChild(clickable);
+                books.appendChild(book);
             }
         }
     }
