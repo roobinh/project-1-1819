@@ -1,5 +1,3 @@
-console.log("Succesfully imported: index.js");
-
 import { range } from "./modules/utils.js";
 import { detectPingError, buildPong, supressPingError } from "./modules/ping.js";
 import PromiseStream from "./modules/PromiseStream.js";
@@ -10,8 +8,9 @@ export class API {
 	constructor ({
 		CORSProxy = "https://cors-anywhere.herokuapp.com/",
 		baseURL = "https://zoeken.oba.nl/api/v1/",
-		key = "1e19898c87464e239192c8bfe422f280"
+		key = "NO_KEY_PROVIDED"
 	} = {}) {
+		this._context = null;
 		this._URL = CORSProxy
 			+ baseURL
 			+ "ENDPOINT" //will be `.replace`d later (is this a good practise?)
@@ -53,7 +52,7 @@ export class API {
 
 		return {
 			endpoint,
-			query: `&${query}=${value.trim()}`,
+			query: encodeURI(`&${query}=${value.trim()}`),
 			max: Number(max),
 			pagesize: Math.min(
 				Number(max),
@@ -71,17 +70,21 @@ export class API {
 			pagesize
 		} = Object.assign({}, this._parsePartial(partial), options);
 		const url = this._URL.replace("ENDPOINT", endpoint) + query;
-		const {count, context} = await this._ping(url);
+		const {count, context} = await this._ping(url, this._context);
 		const batches = Math.ceil(Math.min(max, count) / pagesize);
 		const builtURL = url + `&pagesize=${pagesize}&refine=true`;
 
-		return {batches, builtURL, context, count};
+		this._context = context;
+
+		return {batches, builtURL, count};
 	}
 
-	_ping (url) {
-		const builtURL = url + "&pagesize=1&refine=false";
+	_ping (url, context) {
+		const builtURL = (context !== null)
+			? url + `&pagesize=1&refine=false&rctx=${context}`
+			: url + `&pagesize=1&refine=false`;
 
-		return fetch(builtURL)
+		return fetch(builtURL) //test if it's beneficial to use smartrequest here
 			.then(detectPingError)
 			.then(res => res.text())
 			.then(XMLToJSON)
@@ -90,29 +93,28 @@ export class API {
 			.catch(supressPingError);
 	}
 
-	async createStream(partial, options = {}) {
+	async createStream (partial, options = {}) {
 		const {
 			batches,
 			builtURL,
-			context,
 			count
 		} = await this._getRequestSpecifics(partial, options);
 
 		if (count === 0) throw new Error(`No results found for '${partial}'.`);
 
-		return new PromiseStream(range(batches)
-				.map(index => builtURL + `&page=${index + 1}&rctx=${context}`)
-				.map(url => smartRequest(url)))
+		return new PromiseStream(
+				range(batches)
+					.map(index => builtURL + `&page=${index + 1}&rctx=${this._context}`)
+					.map(url => smartRequest(url)))
 			.pipe(XMLToJSON)
 			.pipe(cleanAquabrowserJSON)
 			.catch(API.logError);
 	}
 
-	async createIterator(partial, options = {}) {
+	async createIterator (partial, options = {}) {
 		const {
 			batches,
 			builtURL,
-			context,
 			count
 		} = await this._getRequestSpecifics(partial, options);
 
@@ -120,7 +122,7 @@ export class API {
 
 		async function* iterator () {
 			const requests = range(batches)
-				.map(index => builtURL + `&page=${index + 1}&rctx=${context}`);
+				.map(index => builtURL + `&page=${index + 1}&rctx=${this._context}`);
 
 			while (requests.length > 0) {
 				const url = requests.shift();
@@ -131,25 +133,38 @@ export class API {
 			}
 		}
 
-		return iterator();
+		return iterator.call(this);
 	}
 
 	async createPromise (partial, options = {}) {
 		const {
 			batches,
 			builtURL,
-			context,
 			count
 		} = await this._getRequestSpecifics(partial, options);
 
 		if (count === 0) throw new Error(`No results found for '${partial}'.`);
 
 		return range(batches)
-			.map(index => builtURL + `&page=${index + 1}&rctx=${context}`)
+			.map(index => builtURL + `&page=${index + 1}&rctx=${this._context}`)
 			.map(url => smartRequest(url)
 				.then(XMLToJSON)
 				.then(cleanAquabrowserJSON)
 				.catch(API.logError));
+	}
+
+	availability (frabl) { //I hate this "solution", please fix dis kty <3
+		const url = this._URL.replace("ENDPOINT", "availability");
+		return smartRequest(url + `&frabl=${frabl}`)
+			.then(XMLToJSON)
+			.catch(API.logError);
+	}
+
+	details (frabl) { //I hate this "solution", please fix dis kty <3
+		const url = this._URL.replace("ENDPOINT", "details");
+		return smartRequest(url + `&frabl=${frabl}`)
+			.then(XMLToJSON)
+			.catch(API.logError);
 	}
 }
 

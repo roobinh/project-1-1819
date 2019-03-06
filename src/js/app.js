@@ -75,7 +75,7 @@ if(window.location.hash === "") {
                 var title = document.createElement('h2');
                 // title = title.split('/');
                 title.setAttribute('class', 'title');
-                var titel = response[i]['title']['full'];
+                var titel = response[i]['titles']['title']['_text'];
                 
                 if(typeof titel === 'undefined') {
                     titel = "Unknown";
@@ -86,18 +86,20 @@ if(window.location.hash === "") {
     
                 var cover = document.createElement('img');
                 cover.setAttribute('class', 'cover');
-                var image = response[i]['images'][0];
+                var image = response[i]['coverimages']['coverimage'][0]['_text'];
                 cover.setAttribute('src', image);
     
                 var desc = document.createElement('p');
                 desc.setAttribute('class', 'description');
-                var description = response[i]['summary'];
-                if(typeof description !== 'undefined') {
-                    desc.innerHTML = description.slice(0, 200);
+
+
+                if(response[i].hasOwnProperty('summaries')) {
+                    var description = response[i]['summaries']['summary']['_text'];
                 } else {
-                    desc.innerHTML = "Description not available";
+                    var description = "Description not available";
                 }
-    
+                desc.innerHTML = description.slice(0, 200);
+                
                 book.appendChild(title);
                 book.appendChild(cover);
                 book.appendChild(desc);
