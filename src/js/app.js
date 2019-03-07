@@ -110,54 +110,68 @@ if(window.location.hash === "") {
         },
         availability: function(availability) {
             console.log(availability);
+
             render.disableLoader();
 
-            var availabilityDiv = document.getElementById('availability');
+            // div where availability gets added        
+            var mainDiv = document.getElementById('availability');
+            
+            // all possible locations
             var locations = availability['aquabrowser']['locations']['location'];
 
-            for(var i=0; i<locations.length;i++) {
-                location = locations[i];
+            // all locations where the book is available
+            var availableLocations = []
+
+            for(var i=0; i < locations.length;i++) {
+                var div = document.createElement('div');
+
+                var location = locations[i];
 
                 var name = location['_attributes']['name'];
                 var available = location['_attributes']['available'];
-                // var floor = location['items']['item']['subloc']['_text'];
-                // var shelf = location['items']['item']['shelfmark']['_text'];
 
-                var div = document.createElement('div');
-
-                if(location['_attributes']['available'] == "true") {
-                    div.setAttribute('class', 'available');
-
-                    var clickable = document.createElement('a');
-
-                    clickable.setAttribute('href', '#directions?=' + name);
-                    clickable.innerHTML = "Directions";
-
-                    div.appendChild(clickable);
-
-                } else {
-                    div.setAttribute('class', 'unavailable');
-                }
-
-                var location = document.createElement('h2');
-                location.innerHTML = name;
+                var title = document.createElement('h2');
+                title.innerHTML = name;
 
                 var availability = document.createElement('p');
                 availability.innerHTML = "available: " + available;
+                
+                if(location['_attributes']['available'] == "true") {
+                    availableLocations.push(name);
+
+                    div.setAttribute('class', 'available');
+
+                    var directions = document.createElement('a');
+                    directions.setAttribute('href', '#directions?=' + name);
+                    directions.innerHTML = "Directions";
+
+                    div.appendChild(title);
+                    div.appendChild(availability);  
+                    div.appendChild(directions);
+
+                } else {
+                    div.setAttribute('class', 'unavailable');
+
+                    div.appendChild(title);
+                    div.appendChild(availability);
+                }
+
+                // var floor = location['items']['item']['subloc']['_text'];
+                // var shelf = location['items']['item']['shelfmark']['_text'];
 
                 // var verdieping = document.createElement('p');
                 // verdieping.innerHTML = floor;
 
                 // var kast = document.createElement('p');
                 // kast.innerHTML = shelf;
-
-                div.appendChild(location);
-                div.appendChild(availability);
+                
                 // div.appendChild(verdieping);
                 // div.appendChild(kast);
 
-                availabilityDiv.appendChild(div);
+                mainDiv.appendChild(div);
             }
+            console.log(availableLocations);
+
         },
         enableLoader: function() {
             var loader = document.getElementById("loader");
