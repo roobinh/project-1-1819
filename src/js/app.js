@@ -17,8 +17,7 @@ if(window.location.hash === "") {
     
     const wrapper = {
         searchBook: async function(name) {
-            var loader = document.getElementById("loader");
-            loader.setAttribute('style', 'display: block;');
+            render.enableLoader();
 
             console.log("Searching Book: " + name + "...");
             
@@ -29,17 +28,13 @@ if(window.location.hash === "") {
                 .catch(console.error);
         },
         searchAvailability: async function(frabl) {
-            var loader = document.getElementById('loader');
-            loader.setAttribute('style', 'display: block;');
+            render.enableLoader();
 
             console.log("Searching Availability, frabl: " + frabl + "...");
 
             const avail = await api.availability(frabl);
-            // avail.then(console.log)
-            // console.log(avail);
+
             render.availability(avail);
-
-
         }
     }
 
@@ -47,22 +42,22 @@ if(window.location.hash === "") {
         home: function() {
 			console.log('Home pagina.');
         },
-
-        availability: function(frabl) {
-            console.log("Availability pagina. frabl = " + frabl);
-            
+        availability: function(frabl) {            
             var books = document.getElementById('books');
             books.setAttribute('style', 'display: none');
 
             wrap.searchAvailability(frabl);
+        },
+        directions: function(location) {
+            window.open("http://maps.google.com/?q=" + location);
         }
     }
 
     const renderer = {
         addToDocument: function(response) {
             console.log(response)
-            var loader = document.getElementById('loader');
-            loader.setAttribute('style', 'display: none;');
+
+            render.disableLoader();
 
             var books = document.getElementById('books');
     
@@ -115,20 +110,62 @@ if(window.location.hash === "") {
         },
         availability: function(availability) {
             console.log(availability);
+            render.disableLoader();
 
-            var loader = document.getElementById('loader');
-            loader.setAttribute('style', 'display: none;');
-
+            var availabilityDiv = document.getElementById('availability');
             var locations = availability['aquabrowser']['locations']['location'];
 
             for(var i=0; i<locations.length;i++) {
-                console.log(locations[i]['_attributes']['name'])
-                // console.log(locations)
+                location = locations[i];
+
+                var name = location['_attributes']['name'];
+                var available = location['_attributes']['available'];
+                // var floor = location['items']['item']['subloc']['_text'];
+                // var shelf = location['items']['item']['shelfmark']['_text'];
+
+                var div = document.createElement('div');
+
+                if(location['_attributes']['available'] == "true") {
+                    div.setAttribute('class', 'available');
+
+                    var clickable = document.createElement('a');
+
+                    clickable.setAttribute('href', '#directions?=' + name);
+                    clickable.innerHTML = "Directions";
+
+                    div.appendChild(clickable);
+
+                } else {
+                    div.setAttribute('class', 'unavailable');
+                }
+
+                var location = document.createElement('h2');
+                location.innerHTML = name;
+
+                var availability = document.createElement('p');
+                availability.innerHTML = "available: " + available;
+
+                // var verdieping = document.createElement('p');
+                // verdieping.innerHTML = floor;
+
+                // var kast = document.createElement('p');
+                // kast.innerHTML = shelf;
+
+                div.appendChild(location);
+                div.appendChild(availability);
+                // div.appendChild(verdieping);
+                // div.appendChild(kast);
+
+                availabilityDiv.appendChild(div);
             }
-
-
-            // var test = availability['aquabrowser']['locations']['location'][0]['_attributes']['name'];
-            // console.log(test);
+        },
+        enableLoader: function() {
+            var loader = document.getElementById("loader");
+            loader.setAttribute('style', 'display: block;');
+        },
+        disableLoader: function() {
+            var loader = document.getElementById('loader');
+            loader.setAttribute('style', 'display: none;');
         }
     }
 
@@ -142,10 +179,15 @@ if(window.location.hash === "") {
 		'home': function() {
             route.home();
 		},
-		'availability/?:id': function(id) {
-            id = id.substr(7) // '?:id=8892374' -> '8892374'
-            route.availability(id);
-		}
+		'availability/?:frabl': function(frabl) {
+            console.log(frabl);
+            route.availability(frabl.substr(7));
+        },
+        'directions/?:location': function(location) {
+            console.log(location.substr(2));
+            route.directions(location.substr(2));
+
+        }
     });
     
     //-----------EVENT LISTENERS-----------//
