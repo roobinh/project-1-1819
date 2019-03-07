@@ -27,6 +27,19 @@ if(window.location.hash === "") {
             stream
                 .pipe(render.addToDocument)
                 .catch(console.error);
+        },
+        searchAvailability: async function(frabl) {
+            var loader = document.getElementById('loader');
+            loader.setAttribute('style', 'display: block;');
+
+            console.log("Searching Availability, frabl: " + frabl + "...");
+
+            const avail = await api.availability(frabl);
+            // avail.then(console.log)
+            // console.log(avail);
+            render.availability(avail);
+
+
         }
     }
 
@@ -35,14 +48,13 @@ if(window.location.hash === "") {
 			console.log('Home pagina.');
         },
 
-        availability: function(id) {
-            console.log("Availability pagina. ID = " + id);
+        availability: function(frabl) {
+            console.log("Availability pagina. frabl = " + frabl);
             
             var books = document.getElementById('books');
             books.setAttribute('style', 'display: none');
 
-            var loader = document.getElementById('loader');
-            loader.setAttribute('style', 'display: block;');
+            wrap.searchAvailability(frabl);
         }
     }
 
@@ -56,24 +68,17 @@ if(window.location.hash === "") {
     
             for(var i=0; i<response.length ; i++) {
                 var clickable = document.createElement('a');
-                var identifiers = response[i]['identifiers'];
 
-                for(var x=0; x<identifiers.length; x++) {   
-                    var temp = identifiers[x]['ppn-id'];
-                    if(typeof temp !== 'undefined') {
-                        console.log("gevonden: " + identifiers[x]['ppn-id']);
-                        var id = identifiers[x]['ppn-id'];
-                    }
-                }  
+                var frabl = response[i]['frabl']['_text'];
 
-                clickable.setAttribute('href', '#availability?id=' + id);
+                clickable.setAttribute('href', '#availability?frabl=' + frabl);
                 clickable.innerHTML = "Beschikbaarheid";
 
                 var book = document.createElement('div');
                 book.setAttribute('class', 'book');
     
                 var title = document.createElement('h2');
-                // title = title.split('/');
+
                 title.setAttribute('class', 'title');
                 var titel = response[i]['titles']['title']['_text'];
                 
@@ -107,6 +112,23 @@ if(window.location.hash === "") {
                 
                 books.appendChild(book);
             }
+        },
+        availability: function(availability) {
+            console.log(availability);
+
+            var loader = document.getElementById('loader');
+            loader.setAttribute('style', 'display: none;');
+
+            var locations = availability['aquabrowser']['locations']['location'];
+
+            for(var i=0; i<locations.length;i++) {
+                console.log(locations[i]['_attributes']['name'])
+                // console.log(locations)
+            }
+
+
+            // var test = availability['aquabrowser']['locations']['location'][0]['_attributes']['name'];
+            // console.log(test);
         }
     }
 
@@ -121,7 +143,7 @@ if(window.location.hash === "") {
             route.home();
 		},
 		'availability/?:id': function(id) {
-            id = id.substr(4) // '?:id=8892374' -> '8892374'
+            id = id.substr(7) // '?:id=8892374' -> '8892374'
             route.availability(id);
 		}
     });
