@@ -122,11 +122,21 @@ if(window.location.hash === "") {
             // all locations where the book is available
             var availableLocations = []
 
-            for(var i=0; i < locations.length;i++) {
+            if(typeof(locations.length) === "undefined") {
+                var amountOfBooks = 1;
+            } else {
+                var amountOfBooks = locations.length;
+            }
+
+            for(var i=0; i<amountOfBooks; i++) {
                 var div = document.createElement('div');
 
-                var location = locations[i];
-
+                if(typeof(locations.length) === "undefined") {
+                    var location = locations;
+                } else {
+                    var location = locations[i];
+                }
+                
                 var name = location['_attributes']['name'];
                 var available = location['_attributes']['available'];
 
@@ -145,8 +155,19 @@ if(window.location.hash === "") {
                     directions.setAttribute('href', '#directions?=' + name);
                     directions.innerHTML = "Directions";
 
+                    var floor = location['items']['item']['subloc']['_text'];
+                    var shelf = location['items']['item']['shelfmark']['_text'];
+
+                    var verdieping = document.createElement('p');
+                    verdieping.innerHTML = "Afdeling: " + floor;
+
+                    var kast = document.createElement('p');
+                    kast.innerHTML = "Plaats: " + shelf;
+
                     div.appendChild(title);
-                    div.appendChild(availability);  
+                    div.appendChild(availability); 
+                    div.appendChild(verdieping);
+                    div.appendChild(kast);    
                     div.appendChild(directions);
 
                 } else {
@@ -156,17 +177,11 @@ if(window.location.hash === "") {
                     div.appendChild(availability);
                 }
 
-                // var floor = location['items']['item']['subloc']['_text'];
-                // var shelf = location['items']['item']['shelfmark']['_text'];
-
-                // var verdieping = document.createElement('p');
-                // verdieping.innerHTML = floor;
-
-                // var kast = document.createElement('p');
-                // kast.innerHTML = shelf;
                 
-                // div.appendChild(verdieping);
-                // div.appendChild(kast);
+
+                
+                
+                
 
                 mainDiv.appendChild(div);
             }
