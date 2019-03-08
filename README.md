@@ -21,10 +21,10 @@ Stap 3: Pagina met daarop:
 + Verdieping en afdeling waar het boek te vinden is
 + Routebeschrijving binnen de bibliotheek.
 
-note: wegens ziekte (griep) heb ik het product helaas niet af gekregen.
+note: wegens ziekte (griep) heb ik het product helaas niet af gekregen. Toch kom ik mijn idee nog wel presenteren.
 
 ## 3. API
-Voor dit project wordt de OBA API gebruikt. Voor volledige documentatie verwijs ik u graag naar de [DOCUMENTATIE](https://zoeken.oba.nl/api/v1/.)
+Voor dit project wordt de OBA API gebruikt. Voor volledige documentatie verwijs ik u graag naar de [documentatie](https://zoeken.oba.nl/api/v1/).
 
 ## 4. Installatie
 ```
@@ -34,6 +34,8 @@ cd project-1-1819
 ```
 
 ## 5. Extra: afstand tot de bibliotheek bepalen?
+Uit de API is de Longitude en Latitude van alle bibliotheken op te vragen. Nu heb je alleen nog de longitude en latitude van de klant nodig.
+
 ``` javascript
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     var R = 6371; // Radius of the earth in km
