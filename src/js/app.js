@@ -87,9 +87,21 @@ if(window.location.hash === "") {
     
                 var cover = document.createElement('img');
                 cover.setAttribute('class', 'cover');
-                var image = response[i]['coverimages']['coverimage'][0]['_text'];
+
+                if(response[i]['coverimages']['coverimage'].hasOwnProperty(0)) {
+                    var image = response[i]['coverimages']['coverimage'][0]['_text'];
+                } else {
+                    var image = response[i]['coverimages']['coverimage']['_text'];
+                }
+
+                // if(response[i]['coverimages']['coverimage'][0]['_text']) {
+                //     var image = response[i]['coverimages']['coverimage'][0]['_text'];
+                // } else {
+                //     var image = response[i]['coverimages']['coverimage']['_text'];
+                // }
+                
                 cover.setAttribute('src', image);
-    
+
                 var desc = document.createElement('p');
                 desc.setAttribute('class', 'description');
 
