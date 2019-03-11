@@ -45,7 +45,6 @@ if(window.location.hash === "") {
             var books = document.getElementById('books');
             books.setAttribute('style', 'display: none');
 
-            render.enableMapBox();
             wrap.searchAvailability(frabl);
         },
         directions: function(location) {
@@ -117,6 +116,7 @@ if(window.location.hash === "") {
         availability: function(availability) {
             console.log(availability);
 
+            render.enableAvailability();
             render.disableLoader();
 
             // div where availability gets added        
@@ -153,7 +153,11 @@ if(window.location.hash === "") {
                 availability.innerHTML = "available: " + available;
                 
                 if(location['_attributes']['available'] == "true") {
-                    availableLocations.push(name);
+
+                    var lat = location['holding']['_attributes']['latitude'];
+                    var long = location['holding']['_attributes']['longitude'];
+
+                    availableLocations.push(lat + "-" + long);
 
                     div.setAttribute('class', 'available');
 
@@ -185,6 +189,7 @@ if(window.location.hash === "") {
                 mainDiv.appendChild(div);
             }
             console.log(availableLocations);
+            render.MapBox(availableLocations);
         },
         enableLoader: function() {
             var loader = document.getElementById("loader");
@@ -194,13 +199,57 @@ if(window.location.hash === "") {
             var loader = document.getElementById('loader');
             loader.setAttribute('style', 'display: none;');
         },
-        enableMapBox: function() {
+        enableAvailability: function() {
+            var avail = document.getElementById('availability');
+            avail.setAttribute('style', 'display: grid');
+        },
+        MapBox: function(pointers) {
             console.log("Enabling MapBox...");
+
             mapboxgl.accessToken = 'pk.eyJ1Ijoicm9vYmluMTk5OSIsImEiOiJjanJxYzVpeGIwdzJ4NDlycTZvd2lramRkIn0.jEoxjM-oE38jYCIHnhLw_g';
             
             var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/streets-v11'
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                zoom: 11.51,
+                center: [4.9006,52.3648]
+            });
+
+            map.on("load", function () {
+                /* Image: An image is loaded and added to the map. */
+                for(var x=0; x < pointers.length; x++) {
+                    var latlong = pointers[x].split("-");
+
+                    //pointer 2: lat = 5.22234, long = 40.72364
+                    console.log("Pointer " +  x + ": lat = " + latlong[0] + ", long = " + latlong[1]);
+                }
+                map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+                    if (error) throw error;
+                    map.addImage("custom-marker", image);
+                    /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+                    map.addLayer({
+                        id: "markers",
+                        type: "symbol",
+                        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+                        source: {
+                            type: "geojson",
+                            data: {
+                                type: 'FeatureCollection',
+                                features: [{
+                                    type: 'Feature',
+                                    properties: {},
+                                    geometry: {
+                                    type: "Point",
+                                    coordinates: [4.9037, 52.378]
+                                }
+                            }]
+                        }
+                    },
+                    layout: {
+                        "icon-image": "custom-marker",
+                    }
+                });
+                });
             });
         }
     }
