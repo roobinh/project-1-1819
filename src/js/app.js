@@ -18,7 +18,6 @@ if(window.location.hash === "") {
     const wrapper = {
         searchBook: async function(name) {
             render.enableLoader();
-
             console.log("Searching Book: " + name + "...");
             
             const stream = await api.createStream("search/" + name + "{9}");
@@ -46,6 +45,7 @@ if(window.location.hash === "") {
             var books = document.getElementById('books');
             books.setAttribute('style', 'display: none');
 
+            render.enableMapBox();
             wrap.searchAvailability(frabl);
         },
         directions: function(location) {
@@ -93,18 +93,11 @@ if(window.location.hash === "") {
                 } else {
                     var image = response[i]['coverimages']['coverimage']['_text'];
                 }
-
-                // if(response[i]['coverimages']['coverimage'][0]['_text']) {
-                //     var image = response[i]['coverimages']['coverimage'][0]['_text'];
-                // } else {
-                //     var image = response[i]['coverimages']['coverimage']['_text'];
-                // }
                 
                 cover.setAttribute('src', image);
 
                 var desc = document.createElement('p');
                 desc.setAttribute('class', 'description');
-
 
                 if(response[i].hasOwnProperty('summaries')) {
                     var description = response[i]['summaries']['summary']['_text'];
@@ -200,6 +193,15 @@ if(window.location.hash === "") {
         disableLoader: function() {
             var loader = document.getElementById('loader');
             loader.setAttribute('style', 'display: none;');
+        },
+        enableMapBox: function() {
+            console.log("Enabling MapBox...");
+            mapboxgl.accessToken = 'pk.eyJ1Ijoicm9vYmluMTk5OSIsImEiOiJjanJxYzVpeGIwdzJ4NDlycTZvd2lramRkIn0.jEoxjM-oE38jYCIHnhLw_g';
+            
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+            });
         }
     }
 
@@ -214,7 +216,6 @@ if(window.location.hash === "") {
             route.home();
         },
 		'availability/?:frabl': function(frabl) {
-            console.log(frabl);
             route.availability(frabl.substr(7));
         },
         'directions/?:location': function(location) {
