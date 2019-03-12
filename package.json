@@ -1,0 +1,24 @@
+{
+  "name": "project-1-1819",
+  "version": "1.0.0",
+  "description": "OBA - Zoek je boek",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roobinh/project-1-1819.git"
+  },
+  "author": "Robin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roobinh/project-1-1819/issues"
+  },
+  "homepage": "https://github.com/roobinh/project-1-1819#readme"
+}
