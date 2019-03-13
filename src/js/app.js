@@ -60,12 +60,15 @@ if(window.location.hash === "") {
             
                 var frabl = response[i]['frabl']['_text'];
 
-                var clickable = document.createElement('a').setAttribute('href', '#availability?frabl=' + frabl);
+                var clickable = document.createElement('a');
+                clickable.setAttribute('href', '#availability?frabl=' + frabl);
                 clickable.innerHTML = "Beschikbaarheid";
 
-                var book = document.createElement('div').setAttribute('class', 'book');
+                var book = document.createElement('div');
+                book.setAttribute('class', 'book');
 
-                var title = document.createElement('h2').setAttribute('class', 'title');
+                var title = document.createElement('h2');
+                title.setAttribute('class', 'title');
     
                 var titel = response[i]['titles']['title']['_text'];
                 if(typeof titel === 'undefined') {
@@ -75,7 +78,8 @@ if(window.location.hash === "") {
                 }
                 title.innerHTML = titel;
     
-                var cover = document.createElement('img').setAttribute('class', 'cover');
+                var cover = document.createElement('img');
+                cover.setAttribute('class', 'cover');
 
                 if(response[i]['coverimages']['coverimage'].hasOwnProperty(0)) {
                     var image = response[i]['coverimages']['coverimage'][0]['_text'];
@@ -85,7 +89,8 @@ if(window.location.hash === "") {
                 
                 cover.setAttribute('src', image);
 
-                var desc = document.createElement('p').setAttribute('class', 'description');
+                var desc = document.createElement('p');
+                desc.setAttribute('class', 'description');
 
                 if(response[i].hasOwnProperty('summaries')) {
                     var description = response[i]['summaries']['summary']['_text'];
