@@ -17,7 +17,7 @@ if(window.location.hash === "") {
     
     const wrapper = {
         searchBook: async function(name) {
-            render.enableLoader();
+            ui.enableLoader();
             console.log("Searching Book: " + name + "...");
             
             const stream = await api.createStream("search/" + name + "{9}");
@@ -27,7 +27,7 @@ if(window.location.hash === "") {
                 .catch(console.error);
         },
         searchAvailability: async function(frabl) {
-            render.enableLoader();
+            ui.enableLoader();
 
             console.log("Searching Availability, frabl: " + frabl + "...");
 
@@ -39,16 +39,13 @@ if(window.location.hash === "") {
 
     const router = {
         home: function() {
-			console.log('Home pagina.');
+            console.log('Home pagina.');
         },
         availability: function(frabl) {            
             var books = document.getElementById('books');
-            books.setAttribute('style', 'display: none');
 
+            books.setAttribute('style', 'display: none');
             wrap.searchAvailability(frabl);
-        },
-        directions: function(location) {
-            window.open("http://maps.google.com/?q=" + location);
         }
     }
 
@@ -56,7 +53,7 @@ if(window.location.hash === "") {
         addToDocument: function(response) {
             console.log(response)
 
-            render.disableLoader();
+            ui.disableLoader();
 
             var books = document.getElementById('books');
             books.innerHTML = "";
@@ -116,8 +113,8 @@ if(window.location.hash === "") {
         availability: function(availability) {
             console.log(availability);
 
-            render.enableAvailability();
-            render.disableLoader();
+            ui.enableAvailability();
+            ui.disableLoader();
 
             //JSON with pointers
             var geojson = [];
@@ -162,7 +159,7 @@ if(window.location.hash === "") {
                     div.setAttribute('class', 'available');
 
                     var directions = document.createElement('a');
-                    directions.setAttribute('href', '#directions?=' + name);
+                    directions.setAttribute('href', 'http://maps.google.com/?q=' + name);
                     directions.innerHTML = "Directions";
 
                     if(location['items']['item'].hasOwnProperty(0)) {
@@ -190,15 +187,6 @@ if(window.location.hash === "") {
                         }]
                     });
 
-                    // if(typeof(location['items']['item']['subloc']['_text']) !== "undefined") {
-                    //     var floor = location['items']['item']['subloc']['_text'];
-                    // } else {
-                    //     var floor = "Niet gevonden";
-                    // }
-
-                    // var floor = location['items']['item']['subloc']['_text'] ? location['items']['item']['subloc']['_text'] : "niet gevonden";
-                    // var shelf = location['items']['item']['shelfmark']['_text'];
-
                     var verdieping = document.createElement('p');
                     verdieping.innerHTML = "Afdeling: " + floor;
 
@@ -220,8 +208,11 @@ if(window.location.hash === "") {
                 }
                 mainDiv.appendChild(div);
             }
-            render.MapBox(geojson);
-        },
+            ui.MapBox(geojson);
+        }
+    }
+
+    const uix = {
         enableLoader: function() {
             var loader = document.getElementById("loader");
             loader.setAttribute('style', 'display: block;');
@@ -239,33 +230,110 @@ if(window.location.hash === "") {
             console.log(pointers);
 
             mapboxgl.accessToken = 'pk.eyJ1Ijoicm9vYmluMTk5OSIsImEiOiJjanJxYzVpeGIwdzJ4NDlycTZvd2lramRkIn0.jEoxjM-oE38jYCIHnhLw_g';
+            if(localStorage.getItem(userLong) !== "undefined") {
+                var mapLong = localStorage.getItem('userLong');
+                var mapLat = localStorage.getItem('userLat')
+            } else {
+                var mapLong = '4.9006';
+                var mapLat = '52.3648';
+            }
             
             var map = new mapboxgl.Map({
                 container: "map",
                 style: "mapbox://styles/mapbox/streets-v11",
-                zoom: 10,
-                center: [4.9006,52.3648]
+                zoom: 12,
+                center: [mapLong, mapLat]
             });
 
-            for(var p=0; p<pointers.length;p++) {
-                // create a HTML element for each feature
+            //Calculate nearest library
 
+            var nearest = 1000;
+            var closestName = "";
+
+            var userLong = localStorage.getItem('userLong');
+            var userLat = localStorage.getItem('userLat');
+
+            for(var p=0; p<pointers.length;p++) {
+                var long = pointers[p]['features'][0]['geometry']['coordinates'][0];
+                var lat = pointers[p]['features'][0]['geometry']['coordinates'][1];
+
+                var name = pointers[p]['features'][0]['properties']['title'];
+
+                var distance = location.calculateDistance(userLat, userLong, lat, long);
+                console.log("afstand tot " + name + ": " + distance);
+                
+                if(distance < nearest) {
+                    nearest = distance;
+                    closestName = name;
+                }
+            }
+
+            console.log("Dichstbijzijnde = " + closestName + ", afstand = " + nearest)
+
+            //Place Markers
+            for(var p=0; p<pointers.length;p++) {
                 var title = pointers[p]['features'][0]['properties']['title'];
                 var verdieping = pointers[p]['features'][0]['properties']['floor'];
                 var shelf = pointers[p]['features'][0]['properties']['shelf'];
-
-                console.log(title + verdieping + shelf)
+            
+                console.log(pointers[p]['features'][0]['geometry']['coordinates']);
 
                 var el = document.createElement('div');
-                el.className = 'marker';
+                if(title == closestName) {
+                    el.className = 'markerClose';
+                } else {
+                    el.className = 'marker';
+                }
                 
                 // make a marker for each feature and add to the map
+                console.log("title = " + title)
                 new mapboxgl.Marker(el)
                     .setLngLat(pointers[p]['features'][0]['geometry']['coordinates'])
                     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-                    .setHTML('<h3>' + title + '</h3>'))
+                    .setHTML('<h3>' + title + '</h3>' + "<p><a href='http://maps.google.com/?q=" + title + "'> Route </a></p>"))
                     .addTo(map);
             }
+
+            //Place marker at house
+            el.className = 'markerHouse';
+            var LngLat = [userLong, userLat];
+            console.log("marker at house: " + LngLat);
+            new mapboxgl.Marker(el)
+                .setLngLat(LngLat)
+                .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                .setHTML('<h3> Jouw Locatie </h3>'))
+                .addTo(map);
+        }
+    }
+
+    const locatie = {
+        getLocation: function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(location.setLocation);
+            } else { 
+                console.log("Geolocation is not supported by this browser.");
+            }
+        },
+        setLocation: function(position) {
+            console.log("user position available: " + position.coords.latitude + " + " + position.coords.longitude);
+            localStorage.setItem('userLat', position.coords.latitude);
+            localStorage.setItem('userLong', position.coords.longitude);
+        },
+        calculateDistance: function(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of the earth in km
+            var dLat = location.deg2rad(lat2-lat1);  // deg2rad below
+            var dLon = location.deg2rad(lon2-lon1); 
+            var a = 
+              Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(location.deg2rad(lat1)) * Math.cos(location.deg2rad(lat2)) * 
+              Math.sin(dLon/2) * Math.sin(dLon/2)
+              ; 
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+            var d = R * c; // Distance in km
+            return d;
+        },
+        deg2rad: function(deg) {
+            return deg * (Math.PI/180)
         }
     }
 
@@ -273,6 +341,8 @@ if(window.location.hash === "") {
     const render = Object.create(renderer);
     const wrap = Object.create(wrapper);
     const route = Object.create(router);
+    const location = Object.create(locatie);
+    const ui = Object.create(uix)
 
     //-----------ROUTING-----------//
     routie({
@@ -281,11 +351,6 @@ if(window.location.hash === "") {
         },
 		'availability/?:frabl': function(frabl) {
             route.availability(frabl.substr(7));
-        },
-        'directions/?:location': function(location) {
-            console.log(location.substr(2));
-            route.directions(location.substr(2));
-
         }
     });
     
@@ -294,24 +359,6 @@ if(window.location.hash === "") {
         name = document.getElementById("input").value;
         wrap.searchBook(name);
     });
+
+    location.getLocation();
 })();   
-
-function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
-    var R = 6371; // Radius of the earth in km
-    var dLat = deg2rad(lat2-lat1);  // deg2rad below
-    var dLon = deg2rad(lon2-lon1); 
-    var a = 
-      Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-      Math.sin(dLon/2) * Math.sin(dLon/2)
-      ; 
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    var d = R * c; // Distance in km
-    return d;
-}
-
-function deg2rad(deg) {
-    return deg * (Math.PI/180)
-}
-
-console.log(getDistanceFromLatLonInKm(52.354246, 4.901915, 52.347628, 4.905054));
