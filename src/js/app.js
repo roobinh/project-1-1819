@@ -42,8 +42,8 @@ if(window.location.hash === "") {
         },
         availability: function(frabl) {            
             var books = document.getElementById('books');
-
             books.setAttribute('style', 'display: none');
+
             wrap.searchAvailability(frabl);
         }
     }
@@ -51,28 +51,23 @@ if(window.location.hash === "") {
     const renderer = {
         addToDocument: function(response) {
             console.log(response)
-
             ui.disableLoader();
 
             var books = document.getElementById('books');
             books.innerHTML = "";
 
             for(var i=0; i<response.length ; i++) {
-                var clickable = document.createElement('a');
-
+            
                 var frabl = response[i]['frabl']['_text'];
 
-                clickable.setAttribute('href', '#availability?frabl=' + frabl);
+                var clickable = document.createElement('a').setAttribute('href', '#availability?frabl=' + frabl);
                 clickable.innerHTML = "Beschikbaarheid";
 
-                var book = document.createElement('div');
-                book.setAttribute('class', 'book');
-    
-                var title = document.createElement('h2');
+                var book = document.createElement('div').setAttribute('class', 'book');
 
-                title.setAttribute('class', 'title');
+                var title = document.createElement('h2').setAttribute('class', 'title');
+    
                 var titel = response[i]['titles']['title']['_text'];
-                
                 if(typeof titel === 'undefined') {
                     titel = "Unknown";
                 } else {
@@ -80,8 +75,7 @@ if(window.location.hash === "") {
                 }
                 title.innerHTML = titel;
     
-                var cover = document.createElement('img');
-                cover.setAttribute('class', 'cover');
+                var cover = document.createElement('img').setAttribute('class', 'cover');
 
                 if(response[i]['coverimages']['coverimage'].hasOwnProperty(0)) {
                     var image = response[i]['coverimages']['coverimage'][0]['_text'];
@@ -91,8 +85,7 @@ if(window.location.hash === "") {
                 
                 cover.setAttribute('src', image);
 
-                var desc = document.createElement('p');
-                desc.setAttribute('class', 'description');
+                var desc = document.createElement('p').setAttribute('class', 'description');
 
                 if(response[i].hasOwnProperty('summaries')) {
                     var description = response[i]['summaries']['summary']['_text'];
@@ -112,6 +105,7 @@ if(window.location.hash === "") {
         availability: function(availability) {
             console.log(availability);
 
+            //UI styling
             ui.enableAvailability();
             ui.disableLoader();
 
@@ -132,7 +126,6 @@ if(window.location.hash === "") {
 
             //Loop trough all books
             for(var i=0; i<amountOfBooks; i++) {
-
                 var div = document.createElement('div');
                 var availability = document.createElement('p');
                 var title = document.createElement('h2');
@@ -245,7 +238,7 @@ if(window.location.hash === "") {
             });
 
             //Calculate nearest library
-            var nearest = 1000;
+            var nearest = 10000;
             var closestName = "";
 
             var userLong = localStorage.getItem('userLong');
@@ -265,6 +258,7 @@ if(window.location.hash === "") {
                     closestName = name;
                 }
             }
+            
             console.log("Dichstbijzijnde = " + closestName + ", afstand = " + nearest)
 
             //Place Markers
