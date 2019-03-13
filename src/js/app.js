@@ -116,7 +116,6 @@ if(window.location.hash === "") {
         availability: function(availability) {
             console.log(availability);
 
-            
             render.enableAvailability();
             render.disableLoader();
 
@@ -137,7 +136,10 @@ if(window.location.hash === "") {
 
             //Loop trough all books
             for(var i=0; i<amountOfBooks; i++) {
+
                 var div = document.createElement('div');
+                var availability = document.createElement('p');
+                var title = document.createElement('h2');
 
                 if(typeof(locations.length) === "undefined") {
                     var location = locations;
@@ -145,20 +147,32 @@ if(window.location.hash === "") {
                     var location = locations[i];
                 }
                 
-                var name = location['_attributes']['name'];
                 var available = location['_attributes']['available'];
+                var name = location['_attributes']['name'];
 
-                var title = document.createElement('h2');
-                title.innerHTML = name;
-
-                var availability = document.createElement('p');
                 availability.innerHTML = "available: " + available;
+                title.innerHTML = name;
 
                 //If book is available
                 if(location['_attributes']['available'] == "true") {
 
                     var lat = location['holding']['_attributes']['latitude'];
                     var long = location['holding']['_attributes']['longitude'];
+
+                    div.setAttribute('class', 'available');
+
+                    var directions = document.createElement('a');
+                    directions.setAttribute('href', '#directions?=' + name);
+                    directions.innerHTML = "Directions";
+
+                    if(location['items']['item'].hasOwnProperty(0)) {
+                        var loc = location['items']['item'][0];
+                    } else {
+                        var loc = location['items']['item'];
+                    }
+                    
+                    var floor = loc['subloc']['_text'];
+                    var shelf = loc['shelfmark']['_text'];
 
                     geojson.push({
                         type: 'FeatureCollection',
@@ -169,20 +183,21 @@ if(window.location.hash === "") {
                             coordinates: [long, lat]
                           },
                           properties: {
-                            title: 'Mapbox',
-                            description: 'Washington, D.C.'
+                            title: name,
+                            floor: floor,
+                            shelf: shelf
                           }
                         }]
                     });
 
-                    div.setAttribute('class', 'available');
+                    // if(typeof(location['items']['item']['subloc']['_text']) !== "undefined") {
+                    //     var floor = location['items']['item']['subloc']['_text'];
+                    // } else {
+                    //     var floor = "Niet gevonden";
+                    // }
 
-                    var directions = document.createElement('a');
-                    directions.setAttribute('href', '#directions?=' + name);
-                    directions.innerHTML = "Directions";
-
-                    var floor = location['items']['item']['subloc']['_text'];
-                    var shelf = location['items']['item']['shelfmark']['_text'];
+                    // var floor = location['items']['item']['subloc']['_text'] ? location['items']['item']['subloc']['_text'] : "niet gevonden";
+                    // var shelf = location['items']['item']['shelfmark']['_text'];
 
                     var verdieping = document.createElement('p');
                     verdieping.innerHTML = "Afdeling: " + floor;
@@ -232,82 +247,25 @@ if(window.location.hash === "") {
                 center: [4.9006,52.3648]
             });
 
-            var geojson = {
-                type: 'FeatureCollection',
-                features: [{
-                  type: 'Feature',
-                  geometry: {
-                    type: 'Point',
-                    coordinates: [4.953508, 52.315482]
-                  },
-                  properties: {
-                    title: 'Mapbox',
-                    description: 'Washington, D.C.'
-                  }
-                },
-                {
-                  type: 'Feature',
-                  geometry: {
-                    type: 'Point',
-                    coordinates: [4.87571, 52.332516]
-                  },
-                  properties: {
-                    title: 'Mapbox',
-                    description: 'San Francisco, California'
-                  }
-                }]
-              };
-
-              pointers.features.forEach(function(marker) {
-
+            for(var p=0; p<pointers.length;p++) {
                 // create a HTML element for each feature
+
+                var title = pointers[p]['features'][0]['properties']['title'];
+                var verdieping = pointers[p]['features'][0]['properties']['floor'];
+                var shelf = pointers[p]['features'][0]['properties']['shelf'];
+
+                console.log(title + verdieping + shelf)
+
                 var el = document.createElement('div');
                 el.className = 'marker';
-              
+                
                 // make a marker for each feature and add to the map
                 new mapboxgl.Marker(el)
-                  .setLngLat(marker.geometry.coordinates)
-                  .addTo(map);
-              });
-
-            //  map.on("load", function () {
-            //     /* Image: An image is loaded and added to the map. */
-            //     for(var x=0; x < pointers.length; x++) {
-            //         var latlong = pointers[x].split("-");
-            //         //latitude = latlong[0]
-            //         //longitude = latlong[1]
-                    
-            //         //pointer 2: lat = 5.22234, long = 40.72364
-            //         console.log("Pointer " +  x + ": lat = " + latlong[0] + ", long = " + latlong[1]);
-            //     }
-            //     map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
-            //         if (error) throw error;
-            //         map.addImage("custom-marker", image);
-            //         /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
-            //         map.addLayer({
-            //             id: "markers",
-            //             type: "symbol",
-            //             /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
-            //             source: {
-            //                 type: "geojson",
-            //                 data: {
-            //                     type: 'FeatureCollection',
-            //                     features: [{
-            //                         type: 'Feature',
-            //                         properties: {},
-            //                         geometry: {
-            //                         type: "Point",
-            //                         coordinates: [4.9037, 52.378]
-            //                     }
-            //                 }]
-            //             }
-            //         },
-            //         layout: {
-            //             "icon-image": "custom-marker",
-            //         }
-            //     });
-            //     });
-            // }); 
+                    .setLngLat(pointers[p]['features'][0]['geometry']['coordinates'])
+                    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                    .setHTML('<h3>' + title + '</h3>'))
+                    .addTo(map);
+            }
         }
     }
 
@@ -337,7 +295,6 @@ if(window.location.hash === "") {
         wrap.searchBook(name);
     });
 })();   
-
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     var R = 6371; // Radius of the earth in km

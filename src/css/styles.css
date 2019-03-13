@@ -82,6 +82,16 @@ input[type=text] {
     cursor: pointer;
   }
 
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 .availability {
     display: none;
     grid-template-columns: repeat(3, 1fr);
