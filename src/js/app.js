@@ -39,7 +39,6 @@ if(window.location.hash === "") {
 
     const router = {
         home: function() {
-            console.log('Home pagina.');
         },
         availability: function(frabl) {            
             var books = document.getElementById('books');
@@ -237,7 +236,7 @@ if(window.location.hash === "") {
                 var mapLong = '4.9006';
                 var mapLat = '52.3648';
             }
-            
+
             var map = new mapboxgl.Map({
                 container: "map",
                 style: "mapbox://styles/mapbox/streets-v11",
@@ -246,7 +245,6 @@ if(window.location.hash === "") {
             });
 
             //Calculate nearest library
-
             var nearest = 1000;
             var closestName = "";
 
@@ -267,7 +265,6 @@ if(window.location.hash === "") {
                     closestName = name;
                 }
             }
-
             console.log("Dichstbijzijnde = " + closestName + ", afstand = " + nearest)
 
             //Place Markers
@@ -276,17 +273,16 @@ if(window.location.hash === "") {
                 var verdieping = pointers[p]['features'][0]['properties']['floor'];
                 var shelf = pointers[p]['features'][0]['properties']['shelf'];
             
-                console.log(pointers[p]['features'][0]['geometry']['coordinates']);
-
                 var el = document.createElement('div');
                 if(title == closestName) {
                     el.className = 'markerClose';
                 } else {
                     el.className = 'marker';
                 }
-                
+                console.log("Placing marker at:" + title);
+                console.log("longlat: " + pointers[p]['features'][0]['geometry']['coordinates'])
+
                 // make a marker for each feature and add to the map
-                console.log("title = " + title)
                 new mapboxgl.Marker(el)
                     .setLngLat(pointers[p]['features'][0]['geometry']['coordinates'])
                     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
