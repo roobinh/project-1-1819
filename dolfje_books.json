@@ -1,0 +1,2815 @@
+[
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1019761",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1019761",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1019761"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "542BC4D90FF360A0",
+                "search-type": "searcher"
+            },
+            "_text": "542BC4D90FF360A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Paul-van-Loon/Dolfje-Weerwolfje/Boek/?itemid=%7coba-catalogus%7c1019761"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=334622840&isbn=9789025859299&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/334622840&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje / Paul van Loon",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje / Paul van Loon"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Paul van Loon",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "firstname": "Paul",
+                    "lastname": "Loon",
+                    "preposition": "van",
+                    "creatortype": "person",
+                    "main": "true"
+                },
+                "_text": "van Loon, Paul"
+            },
+            "author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Hugo van Look",
+                    "search-type": "searcher",
+                    "translation": "Auteur",
+                    "creatortype": "organization"
+                },
+                "_text": "Hugo van Look"
+            }
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "format": {
+                "_attributes": {
+                    "translation": "Formaat",
+                    "search-method": "format",
+                    "search-term": "book",
+                    "search-type": "searcher"
+                },
+                "_text": "book"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "isbn-id": {
+                "_attributes": {
+                    "search-method": "isbn",
+                    "search-term": "9789025859299",
+                    "search-type": "searcher",
+                    "translation": "ISBN"
+                },
+                "_text": "9789025859299"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "334622840",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "334622840"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2011",
+                    "search-type": "searcher"
+                },
+                "_text": "2011"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "Leopold",
+                        "search-type": "searcher",
+                        "year": "2011",
+                        "place": "Amsterdam"
+                    },
+                    "_text": "Leopold"
+                }
+            },
+            "editions": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "edition": {
+                    "_attributes": {
+                        "translation": "Editie"
+                    },
+                    "_text": "37e dr"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Weerwolven",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Weerwolven"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "147 p: ill ; 23 cm"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is. Vanaf ca. 7,5 jaar."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "note": [
+                {
+                    "_attributes": {
+                        "translation": "Aantekening"
+                    },
+                    "_text": "Omslag vermeldt: Het boek van de film"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Aantekening"
+                    },
+                    "_text": "1e dr.: Amsterdam : Elzenga, 1997"
+                }
+            ]
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "series": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "series-title": {
+                "_attributes": {
+                    "translation": "In de reeks",
+                    "search-method": "series",
+                    "search-term": "Dolfje Weerwolfje",
+                    "search-type": "searcher"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1019761",
+                "cnt": "10",
+                "sort": "year",
+                "frabl": "542BC4D90FF360A0",
+                "frabl-global-count": "10",
+                "frabl-key1": "dolfje weerwolfje",
+                "frabl-key2": "paul van loon",
+                "translation": "Informatie over dubbele items"
+            },
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "format": [
+                {
+                    "_attributes": {
+                        "text": "book",
+                        "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190312.233141",
+                        "translation": "Formaat"
+                    },
+                    "_text": [
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n          ",
+                        "\n        "
+                    ],
+                    "item": [
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|1211115",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2018",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|1146850",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2016",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|1126725",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2014",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|1091316",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2013",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|1019761",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2011",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|874138",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2008",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|790830",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2007",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|411754",
+                                "frabl": "542BC4D90FF360A0",
+                                "language": "dut",
+                                "year": "2004",
+                                "publisher": "Leopold",
+                                "globalholdingscount": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "_attributes": {
+                        "text": "audiobook",
+                        "icon": "/assets/resources/img/mat/audio book.png?skin=oba&bld=20190312.233141",
+                        "translation": "Formaat"
+                    },
+                    "_text": [
+                        "\n          ",
+                        "\n          ",
+                        "\n        "
+                    ],
+                    "item": [
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|774123",
+                                "frabl": "542BC4D90FF330A0",
+                                "language": "dut",
+                                "year": "cop. 2007",
+                                "publisher": "De Kunst",
+                                "globalholdingscount": ""
+                            }
+                        },
+                        {
+                            "_attributes": {
+                                "extid": "|oba-catalogus|411768",
+                                "frabl": "542BC4D90FF330A0",
+                                "language": "dut",
+                                "year": "1997",
+                                "publisher": "Elzenga",
+                                "globalholdingscount": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "411760",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|411760",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|411760"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "3731FCDE05F330A0",
+                "search-type": "searcher"
+            },
+            "_text": "3731FCDE05F330A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Paul-van-Loon/Dolfje-Weerwolfje/Luisterboek/?itemid=%7coba-catalogus%7c411760"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=270066586&isbn=9789066921863&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/270066586&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": [
+                {
+                    "_attributes": {
+                        "translation": "Titel",
+                        "search-method": "title",
+                        "search-term": "Dolfje Weerwolfje",
+                        "search-type": "fuzzy"
+                    },
+                    "_text": "Dolfje Weerwolfje"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Titel",
+                        "search-method": "title",
+                        "search-term": "Dolfje Weerwolfje / Paul van Loon",
+                        "search-type": "fuzzy"
+                    },
+                    "_text": "Dolfje Weerwolfje / Paul van Loon"
+                }
+            ],
+            "short-title": [
+                {
+                    "_attributes": {
+                        "translation": "Korte titel"
+                    },
+                    "_text": "Dolfje Weerwolfje"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Korte titel"
+                    },
+                    "_text": "Dolfje Weerwolfje"
+                }
+            ]
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Paul van Loon",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "firstname": "Paul",
+                    "lastname": "Loon",
+                    "preposition": "van",
+                    "creatortype": "person",
+                    "main": "true"
+                },
+                "_text": "van Loon, Paul"
+            }
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "format": [
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "audiobook",
+                        "search-type": "searcher"
+                    },
+                    "_text": "audiobook"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "book",
+                        "search-type": "searcher"
+                    },
+                    "_text": "book"
+                }
+            ]
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "isbn-id": {
+                "_attributes": {
+                    "search-method": "isbn",
+                    "search-term": "9066921862 (boek)",
+                    "search-type": "searcher",
+                    "translation": "ISBN"
+                },
+                "_text": "9066921862 (boek)"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "270066586",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "270066586"
+            },
+            "ean-id": {
+                "_attributes": {
+                    "search-method": "ean",
+                    "search-term": "0000000147947",
+                    "search-type": "precise",
+                    "translation": "EAN"
+                },
+                "_text": "0000000147947"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2004",
+                    "search-type": "searcher"
+                },
+                "_text": "2004"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "FNB",
+                        "search-type": "searcher",
+                        "year": "[2004]",
+                        "place": "Grave"
+                    },
+                    "_text": "FNB"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "1 optische schijf (Daisy-rom) (167 min.): geluid"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Nederlands gesproken. - Integrale weergave van het gelijknamige boek. - Amsterdam : Elzenga, 1997. - 1e dr. - (Dolfje weerwolfje ; [1])"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|411760",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "3731FCDE05F330A0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje dolfje weerwolfje",
+                "frabl-key2": "paul van loon",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1029112",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1029112",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1029112"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "25925E6DF6F38CA0",
+                "search-type": "searcher"
+            },
+            "_text": "25925E6DF6F38CA0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Joram-Lursen/Dolfje-Weerwolfje/Dvd/?itemid=%7coba-catalogus%7c1029112"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=339543787&isbn=&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/339543787&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje / regie Joram Lürsen",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje / regie Joram Lürsen"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Joram Lürsen",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "creatortype": "organization",
+                    "main": "true"
+                },
+                "_text": "Joram Lürsen"
+            },
+            "author": [
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Ole Kroes",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Ole Kroes"
+                },
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Paul van Loon",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Paul van Loon"
+                }
+            ]
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "format": [
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "dvdvideo",
+                        "search-type": "searcher"
+                    },
+                    "_text": "dvdvideo"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "movie",
+                        "search-type": "searcher"
+                    },
+                    "_text": "movie"
+                }
+            ]
+        },
+        "types": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "type": {
+                "_attributes": {
+                    "translation": "Type"
+                },
+                "_text": "Film"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "339543787",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "339543787"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2012",
+                    "search-type": "searcher"
+                },
+                "_text": "2012"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "BFD",
+                        "search-type": "searcher",
+                        "year": "2012",
+                        "place": "[Houten]"
+                    },
+                    "_text": "BFD"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Weerwolven",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Weerwolven"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "1 dvd-video (87 min.): kleur, geluid, breedbeeld"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is. Vanaf ca. 6 jaar."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Nederlands gesproken. - Gebaseerd op een boek van Paul van Loon. - Bevat ook o.a.: Making of ; Liedje 'Ik ben ik', gezongen door Huub van der Lubbe"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1029112",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "25925E6DF6F38CA0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje",
+                "frabl-key2": "joram lursen ole kroes paul van loon",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1115745",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1115745",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1115745"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "542BC4D90FE000A0",
+                "search-type": "searcher"
+            },
+            "_text": "542BC4D90FE000A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Paul-van-Loon/Dolfje-Weerwolfje//?itemid=%7coba-catalogus%7c1115745"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=373572034&isbn=9789025866525&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/373572034&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje / Paul van Loon",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje / Paul van Loon"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Paul van Loon",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "firstname": "Paul",
+                    "lastname": "Loon",
+                    "preposition": "van",
+                    "creatortype": "person",
+                    "main": "true"
+                },
+                "_text": "van Loon, Paul"
+            },
+            "author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Victor Löw",
+                    "search-type": "searcher",
+                    "translation": "Auteur",
+                    "creatortype": "organization"
+                },
+                "_text": "Victor Löw"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "isbn-id": {
+                "_attributes": {
+                    "search-method": "isbn",
+                    "search-term": "=9789025866525",
+                    "search-type": "searcher",
+                    "translation": "ISBN"
+                },
+                "_text": "=9789025866525"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "373572034",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "373572034"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2014",
+                    "search-type": "searcher"
+                },
+                "_text": "2014"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "Leopold",
+                        "search-type": "searcher",
+                        "year": "[2014]",
+                        "place": "Amsterdam"
+                    },
+                    "_text": "Leopold"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Weerwolven",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Weerwolven"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "2 cd's (ongeveer 117 minuten) ; 12 cm"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is. Vanaf ca. 7,5 jaar."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Weergave van het boek"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1115745",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "542BC4D90FE000A0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje",
+                "frabl-key2": "paul van loon",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "912267",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|912267",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|912267"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "75667C81C41478A0",
+                "search-type": "searcher"
+            },
+            "_text": "75667C81C41478A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Dolfje-Weerwolfje/Tijdschrift/?itemid=%7coba-catalogus%7c912267"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=315276282&isbn=&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/315276282&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "format": {
+                "_attributes": {
+                    "translation": "Formaat",
+                    "search-method": "format",
+                    "search-term": "magazine",
+                    "search-type": "searcher"
+                },
+                "_text": "magazine"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "issn-id": {
+                "_attributes": {
+                    "translation": "ISSN"
+                },
+                "_text": "18771599"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "315276282",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "315276282"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2009",
+                    "search-type": "searcher"
+                },
+                "_text": "2009"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n          ",
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": [
+                    {
+                        "_attributes": {
+                            "translation": "Uitgever",
+                            "search-method": "publisher",
+                            "search-term": "",
+                            "search-type": "searcher",
+                            "place": "[Tilburg]"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "translation": "Uitgever",
+                            "search-method": "publisher",
+                            "search-term": "Zwijsen",
+                            "search-type": "searcher",
+                            "place": "[Amsterdam]"
+                        },
+                        "_text": "Zwijsen"
+                    },
+                    {
+                        "_attributes": {
+                            "translation": "Uitgever",
+                            "search-method": "publisher",
+                            "search-term": "Leopold",
+                            "search-type": "searcher",
+                            "year": "2009-..."
+                        },
+                        "_text": "Leopold"
+                    }
+                ]
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "35 p ; 30 cm"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Tijdschrift over Dolfje Weerwolfje met nieuwe, korte verhalen over Dolfje, fragmenten uit Noura's dagboek, puzzels, moppen, recepten en strips. Vanaf ca. 7 jaar."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Verschijnt 6× per jaar"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|912267",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "75667C81C41478A0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje",
+                "frabl-key2": "",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1029125",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1029125",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1029125"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "25925E6DF6E000A0",
+                "search-type": "searcher"
+            },
+            "_text": "25925E6DF6E000A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Joram-Lursen/Dolfje-Weerwolfje//?itemid=%7coba-catalogus%7c1029125"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=339543833&isbn=&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/339543833&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje / regie Joram Lürsen",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje / regie Joram Lürsen"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Joram Lürsen",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "creatortype": "organization",
+                    "main": "true"
+                },
+                "_text": "Joram Lürsen"
+            },
+            "author": [
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Ole Kroes",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Ole Kroes"
+                },
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Paul van Loon",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Paul van Loon"
+                }
+            ]
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "339543833",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "339543833"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2012",
+                    "search-type": "searcher"
+                },
+                "_text": "2012"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "BFD",
+                        "search-type": "searcher",
+                        "year": "2012",
+                        "place": "[Houten]"
+                    },
+                    "_text": "BFD"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "1 blu-ray (91 min.): kleur, geluid, breedbeeld"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Nederlands gesproken. - Gebaseerd op een boek van Paul van Loon. - Bevat ook o.a.: Making of ; Liedje 'Ik ben ik', gezongen door Huub van der Lubbe"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1029125",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "25925E6DF6E000A0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje",
+                "frabl-key2": "joram lursen ole kroes paul van loon",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1158658",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1158658",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1158658"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "28BBDCF4CEF38CA0",
+                "search-type": "searcher"
+            },
+            "_text": "28BBDCF4CEF38CA0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Paul-van-Loon/Dolfje-Weerwolfje-de-familiemusical/Dvd/?itemid=%7coba-catalogus%7c1158658"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=406763364&isbn=&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/406763364&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje : de familiemusical",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje : de familiemusical"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje : de familiemusical"
+            },
+            "subtitle": {
+                "_attributes": {
+                    "translation": "Sub titel"
+                },
+                "_text": "de familiemusical"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Paul van Loon",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "type": "ant",
+                    "localized-type": "Naar het werk van",
+                    "creatortype": "organization",
+                    "main": "true"
+                },
+                "_text": "Paul van Loon"
+            }
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "format": [
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "dvdvideo",
+                        "search-type": "searcher"
+                    },
+                    "_text": "dvdvideo"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "movie",
+                        "search-type": "searcher"
+                    },
+                    "_text": "movie"
+                }
+            ]
+        },
+        "types": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "type": {
+                "_attributes": {
+                    "translation": "Type"
+                },
+                "_text": "Film"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "406763364",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "406763364"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2016",
+                    "search-type": "searcher"
+                },
+                "_text": "2016"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "Source1 Media",
+                        "search-type": "searcher",
+                        "year": "[2016]",
+                        "place": "[Hilversum]"
+                    },
+                    "_text": "Source1 Media"
+                }
+            }
+        },
+        "classification": {
+            "_attributes": {
+                "translation": "Plaatsingssuggestie"
+            },
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "siso-code": {
+                "_attributes": {
+                    "translation": "SISO",
+                    "search-method": "siso",
+                    "search-term": "J788.6",
+                    "search-type": "precise"
+                },
+                "_text": "J788.6"
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Kindermusicals",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Kindermusicals"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "1 dvd-video (ongeveer 65 min.): kleur, geluid, breedbeeld ; 12 cm + 1 cd"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Als hij zeven wordt, ontdekt Dolfje dat hij een weerwolf is. Vanaf ca. 6 jaar."
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "note": {
+                "_attributes": {
+                    "translation": "Aantekening"
+                },
+                "_text": "Gebaseerd op de kinderboekenreeks van Paul van Loon"
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1158658",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "28BBDCF4CEF38CA0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje de familiemusical",
+                "frabl-key2": "paul van loon",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "1099821",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|1099821",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|1099821"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "1D61F8472CF360A0",
+                "search-type": "searcher"
+            },
+            "_text": "1D61F8472CF360A0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Robby-van-der-Meulen/Dolfje-Weerwolfje-stripboek/Boek/?itemid=%7coba-catalogus%7c1099821"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=363081666&isbn=9789025864118&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/363081666&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": {
+                "_attributes": {
+                    "translation": "Titel",
+                    "search-method": "title",
+                    "search-term": "Dolfje Weerwolfje stripboek / Paul van Loon",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Dolfje Weerwolfje stripboek / Paul van Loon"
+            },
+            "short-title": {
+                "_attributes": {
+                    "translation": "Korte titel"
+                },
+                "_text": "Dolfje Weerwolfje stripboek"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Robby van der Meulen",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "firstname": "Robby",
+                    "lastname": "Meulen",
+                    "preposition": "van der",
+                    "creatortype": "person",
+                    "main": "true"
+                },
+                "_text": "van der Meulen, Robby"
+            },
+            "author": [
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Michiel van de Vijver",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Michiel van de Vijver"
+                },
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Paul van Loon",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Paul van Loon"
+                }
+            ]
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "format": {
+                "_attributes": {
+                    "translation": "Formaat",
+                    "search-method": "format",
+                    "search-term": "book",
+                    "search-type": "searcher"
+                },
+                "_text": "book"
+            }
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "isbn-id": {
+                "_attributes": {
+                    "search-method": "isbn",
+                    "search-term": "9789025864118",
+                    "search-type": "searcher",
+                    "translation": "ISBN"
+                },
+                "_text": "9789025864118"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "363081666",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "363081666"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2013",
+                    "search-type": "searcher"
+                },
+                "_text": "2013"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "Leopold",
+                        "search-type": "searcher",
+                        "year": "[2013]",
+                        "place": "Amsterdam"
+                    },
+                    "_text": "Leopold"
+                }
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Weerwolven",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Weerwolven"
+            }
+        },
+        "genres": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "genre": {
+                "_attributes": {
+                    "translation": "Genre",
+                    "search-method": "genre",
+                    "search-term": "Stripverhaal",
+                    "search-type": "searcher"
+                },
+                "_text": "Stripverhaal"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "59 pagina's: gekleurde illustraties ; 25 cm"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Ballonstrips."
+            }
+        },
+        "target-audiences": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "target-audience": {
+                "_attributes": {
+                    "translation": "Doelgroep",
+                    "search-method": "targetaudience",
+                    "search-term": "ageYouth",
+                    "search-type": "searcher"
+                },
+                "_text": "ageYouth"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|1099821",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "1D61F8472CF360A0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje stripboek",
+                "frabl-key2": "robby van der meulen",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    },
+    {
+        "_text": [
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n      ",
+            "\n    "
+        ],
+        "id": {
+            "_attributes": {
+                "nativeid": "19690",
+                "ds": "library/v/OBA",
+                "translation": "ID",
+                "search-method": "id",
+                "search-term": "|oba-catalogus|19690",
+                "search-type": "precise"
+            },
+            "_text": "|oba-catalogus|19690"
+        },
+        "frabl": {
+            "_attributes": {
+                "translation": "FRBR Nummer (FRABL)",
+                "search-method": "frabl",
+                "search-term": "231AE37CF9F36CA0",
+                "search-type": "searcher"
+            },
+            "_text": "231AE37CF9F36CA0"
+        },
+        "detail-page": {
+            "_text": "http://zoeken.oba.nl/detail/Hugo-Van-Look/Dolfje-Weerwolfje/Cd-rom/?itemid=%7coba-catalogus%7c19690"
+        },
+        "coverimages": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "coverimage": [
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=252784723&isbn=9789025841843&lid=&aut=&ti=&size=70"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Cover"
+                    },
+                    "_text": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/252784723&token=c1322402"
+                }
+            ]
+        },
+        "titles": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "title": [
+                {
+                    "_attributes": {
+                        "translation": "Titel",
+                        "search-method": "title",
+                        "search-term": "Dolfje Weerwolfje",
+                        "search-type": "fuzzy"
+                    },
+                    "_text": "Dolfje Weerwolfje"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Titel",
+                        "search-method": "title",
+                        "search-term": "Dolfje Weerwolfje : een cd-rom voor jonge weerwolven / Paul van Loon ; [ill.: Hugo van Look ... et al. ; aanvullende teksten: Anne-Marie Vervelde ; programmeur: Frank Daalder ; realisatie/productie/geluid: Say Cheeze]",
+                        "search-type": "fuzzy"
+                    },
+                    "_text": "Dolfje Weerwolfje : een cd-rom voor jonge weerwolven / Paul van Loon ; [ill.: Hugo van Look ... et al. ; aanvullende teksten: Anne-Marie Vervelde ; programmeur: Frank Daalder ; realisatie/productie/geluid: Say Cheeze]"
+                }
+            ],
+            "short-title": [
+                {
+                    "_attributes": {
+                        "translation": "Korte titel"
+                    },
+                    "_text": "Dolfje Weerwolfje"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Korte titel"
+                    },
+                    "_text": "Dolfje Weerwolfje : een cd-rom voor jonge weerwolven"
+                }
+            ],
+            "subtitle": {
+                "_attributes": {
+                    "translation": "Sub titel"
+                },
+                "_text": "een cd-rom voor jonge weerwolven"
+            }
+        },
+        "authors": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "main-author": {
+                "_attributes": {
+                    "search-method": "author",
+                    "search-term": "Hugo Van Look",
+                    "search-type": "searcher",
+                    "translation": "Auteur (hoofd)",
+                    "creatortype": "organization",
+                    "main": "true"
+                },
+                "_text": "Hugo Van Look"
+            },
+            "author": [
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Anne-Marie Vervelde",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Anne-Marie Vervelde"
+                },
+                {
+                    "_attributes": {
+                        "search-method": "author",
+                        "search-term": "Frank Daalder",
+                        "search-type": "searcher",
+                        "translation": "Auteur",
+                        "creatortype": "organization"
+                    },
+                    "_text": "Frank Daalder"
+                }
+            ]
+        },
+        "formats": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "format": [
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "cdrom",
+                        "search-type": "searcher"
+                    },
+                    "_text": "cdrom"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Formaat",
+                        "search-method": "format",
+                        "search-term": "cd",
+                        "search-type": "searcher"
+                    },
+                    "_text": "cd"
+                }
+            ]
+        },
+        "identifiers": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "isbn-id": {
+                "_attributes": {
+                    "search-method": "isbn",
+                    "search-term": "9025841848 (Windows en Macintosh)",
+                    "search-type": "searcher",
+                    "translation": "ISBN"
+                },
+                "_text": "9025841848 (Windows en Macintosh)"
+            },
+            "ppn-id": {
+                "_attributes": {
+                    "search-method": "ppn",
+                    "search-term": "252784723",
+                    "search-type": "precise",
+                    "translation": "PICA productienummer"
+                },
+                "_text": "252784723"
+            }
+        },
+        "publication": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "year": {
+                "_attributes": {
+                    "translation": "Publicatiejaar",
+                    "search-method": "year",
+                    "search-term": "2003",
+                    "search-type": "searcher"
+                },
+                "_text": "2003"
+            },
+            "publishers": {
+                "_text": [
+                    "\n          ",
+                    "\n        "
+                ],
+                "publisher": {
+                    "_attributes": {
+                        "translation": "Uitgever",
+                        "search-method": "publisher",
+                        "search-term": "Leopold",
+                        "search-type": "searcher",
+                        "year": "2003",
+                        "place": "Amsterdam"
+                    },
+                    "_text": "Leopold"
+                }
+            }
+        },
+        "classification": {
+            "_attributes": {
+                "translation": "Plaatsingssuggestie"
+            },
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "siso-code": {
+                "_attributes": {
+                    "translation": "SISO",
+                    "search-method": "siso",
+                    "search-term": "621.8",
+                    "search-type": "precise"
+                },
+                "_text": "621.8"
+            }
+        },
+        "languages": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "language": {
+                "_attributes": {
+                    "translation": "Taal",
+                    "search-method": "language",
+                    "search-term": "dut",
+                    "search-type": "searcher"
+                },
+                "_text": "dut"
+            }
+        },
+        "subjects": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "topical-subject": {
+                "_attributes": {
+                    "translation": "Onderwerp",
+                    "search-method": "subject",
+                    "search-term": "Computerspelen",
+                    "search-type": "fuzzy"
+                },
+                "_text": "Computerspelen"
+            }
+        },
+        "description": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "physical-description": {
+                "_attributes": {
+                    "translation": "Kenmerken"
+                },
+                "_text": "1 cd-rom: kleur, geluid + tekst (4 p.)"
+            }
+        },
+        "summaries": {
+            "_text": [
+                "\n        ",
+                "\n      "
+            ],
+            "summary": {
+                "_attributes": {
+                    "translation": "Samenvatting"
+                },
+                "_text": "Dolfje moet acht weerwolftests afleggen om een echte weerwolf te worden net als zijn opa. Vanaf 6 jaar"
+            }
+        },
+        "notes": {
+            "_text": [
+                "\n        ",
+                "\n        ",
+                "\n        ",
+                "\n      "
+            ],
+            "note": [
+                {
+                    "_attributes": {
+                        "translation": "Aantekening"
+                    },
+                    "_text": "Titel van interne bron. - Cd-rom vermeldt tevens: De bende van Leopold"
+                },
+                {
+                    "_attributes": {
+                        "translation": "Aantekening"
+                    },
+                    "_text": "Nederlandstalig"
+                }
+            ],
+            "technical-note": {
+                "_attributes": {
+                    "translation": "Systeemvereisten"
+                },
+                "_text": "Systeemeisen: Apple Macintosh; G3 processor 333mHZ; systeem 8, 9 of OSX; monitor 800x600 pixels en kleuren op minimaal 16 bit (duizenden kleuren); cd-rom speler (8x)"
+            }
+        },
+        "undup-info": {
+            "_attributes": {
+                "key": "|oba-catalogus|19690",
+                "cnt": "0",
+                "sort": "year",
+                "frabl": "231AE37CF9F36CA0",
+                "frabl-global-count": "1",
+                "frabl-key1": "dolfje weerwolfje dolfje weerwolfje een cd rom voor jonge weerwolven",
+                "frabl-key2": "hugo van look anne marie vervelde frank daalder",
+                "translation": "Informatie over dubbele items"
+            }
+        }
+    }
+]

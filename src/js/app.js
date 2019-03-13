@@ -65,7 +65,7 @@ if(window.location.hash === "") {
                 clickable.innerHTML = "Beschikbaarheid";
 
                 var book = document.createElement('div');
-                book.setAttribute('class', 'book');
+                book.className = "book";
 
                 var title = document.createElement('h2');
                 title.setAttribute('class', 'title');
@@ -273,6 +273,7 @@ if(window.location.hash === "") {
                 var shelf = pointers[p]['features'][0]['properties']['shelf'];
             
                 var el = document.createElement('div');
+
                 if(title == closestName) {
                     el.className = 'markerClose';
                 } else {

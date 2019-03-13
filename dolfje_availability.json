@@ -1,0 +1,242 @@
+[
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.907893",
+                        "52.375675"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Oosterdok (centrale)",
+                    "floor": "jeugdetage ",
+                    "shelf": "LEREN EN LEZEN / GRIEZELEN / A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.9169481",
+                        "52.4077335"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Banne",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.961169",
+                        "52.341446"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Diemen",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.911799",
+                        "52.390935"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Van der Pek",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.850216",
+                        "52.369869"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Mercatorplein",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.905654",
+                        "52.296246"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Ouderkerk",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.976528",
+                        "52.297234"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Reigersbos",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.882492",
+                        "52.352776"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Roelof Hartplein",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.871613",
+                        "52.379913"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Staatsliedenbuurt",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "4.954838",
+                        "52.393108"
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Waterlandplein",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "",
+                        ""
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Magazijn",
+                    "floor": "Museumcollectie",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    },
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        "",
+                        ""
+                    ]
+                },
+                "properties": {
+                    "title": "OBA Wisselcollecties",
+                    "floor": "Jeugd",
+                    "shelf": "A-LOON"
+                }
+            }
+        ]
+    }
+]
