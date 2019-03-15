@@ -1,7 +1,5 @@
 import {API} from "./index.js";
 
-localStorage.clear();
-
 console.log("Succesfully imported: app.js");
 
 //-----------SET DEFAULT HASH TO "HOME"-----------//
@@ -10,6 +8,9 @@ if(window.location.hash === "") {
 }
 
 (async() => {
+
+    var userLat;
+    var userLong;
 
     const api = new API({
         key: "1e19898c87464e239192c8bfe422f280"
@@ -227,9 +228,9 @@ if(window.location.hash === "") {
             console.log(pointers);
 
             mapboxgl.accessToken = 'pk.eyJ1Ijoicm9vYmluMTk5OSIsImEiOiJjanJxYzVpeGIwdzJ4NDlycTZvd2lramRkIn0.jEoxjM-oE38jYCIHnhLw_g';
-            if(localStorage.getItem(userLong) !== "undefined") {
-                var mapLong = localStorage.getItem('userLong');
-                var mapLat = localStorage.getItem('userLat')
+            if(userLat !== "undefined") {
+                var mapLong = userLong;
+                var mapLat = userLat;
             } else {
                 var mapLong = '4.9006';
                 var mapLat = '52.3648';
@@ -245,9 +246,6 @@ if(window.location.hash === "") {
             //Calculate nearest library
             var nearest = 10000;
             var closestName = "";
-
-            var userLong = localStorage.getItem('userLong');
-            var userLat = localStorage.getItem('userLat');
 
             for(var p=0; p<pointers.length;p++) {
                 var long = pointers[p]['features'][0]['geometry']['coordinates'][0];
@@ -310,10 +308,12 @@ if(window.location.hash === "") {
                 console.log("Geolocation is not supported by this browser.");
             }
         },
+        
         setLocation: function(position) {
             console.log("user position available: " + position.coords.latitude + " + " + position.coords.longitude);
-            localStorage.setItem('userLat', position.coords.latitude);
-            localStorage.setItem('userLong', position.coords.longitude);
+
+            userLat = position.coords.latitude;
+            userLong = position.coords.longitude;
         },
         calculateDistance: function(lat1, lon1, lat2, lon2) {
             var R = 6371; // Radius of the earth in km
@@ -330,6 +330,12 @@ if(window.location.hash === "") {
         },
         deg2rad: function(deg) {
             return deg * (Math.PI/180)
+        },
+        getUserLong: function() {
+            return userLong;
+        },
+        getUserLat: function() {
+            return userLat;
         }
     }
 
