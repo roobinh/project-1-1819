@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'VWText';
+    src: url('/fonts/VWTextWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'VWHead';
+    src: url('/fonts/VWHeadWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('/fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('/fonts/Roboto-Bold.ttf');
+}
+
+* {
+    font-family: 'RobotoLight', Fallback, sans-serif;
+}
+
+h1 {
+    font-family: 'RobotoBold', fallback, sans-serif;
+}
+
+section {
+    padding: 50px;
+}
+section:nth-child(odd) {
+    background: rgb(255, 255, 255);
+}
+
+section:nth-child(even) {
+    background: rgb(222, 237, 255);
+}
+
+.header {
+    margin: 3em;
+}
+
+.blue {
+    color: #00b1eb;
+    font-size: 2em;
+}
+
+.darkblue {
+    color: #01295b;
+    font-size: 2em;
+}
+
+.fontHead {
+    font-family: 'VWHead';
+    font-weight: 700;
+}
+
+.fontText {
+    font-family: 'VWText';
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+
