@@ -3,8 +3,8 @@
 ## Table of Content
 1. [Opdracht](#1)
 2. [Het product](#2)
-2.1 Workflow
-2.2 Gebruikte technieken
+   -  2.1 Gebruikte technieken
+   -  2.2 Workflow
 3. [Waarom nu wel voldoende?](#3)
 
 <a name="1"></a>
@@ -23,7 +23,14 @@ Hoe ik dit waar heb gemaakt kunt u lezen in het volgende hoofdstuk
 
 ## Hoofdstuk 2 | Het product
 
-### 2.1  - Workflow
+### 2.1 - Gebruikte technieken
+De website bevat op dit moment:
+- Een [NodeJS](https://nodejs.org/en/) server-side webpagina
+- Connectie met de [OBA-API](https://www.oba.nl/nieuws/hva-studenten-bouwen-zoekmachine-voor-de-oba.html)
+- Een [MapBox](https://www.mapbox.com/) kaart
+- Routering d.m.v. [routie](http://projects.jga.me/routie/) (libary)
+- 
+### 2.2  - Workflow
 _Om het product het beste uit te leggen heb ik hieronder de workflow beschreven (+screenshots)_
 
 **Stap 1: Hoofdpagina**
@@ -51,12 +58,7 @@ Ook heeft de klant de optie om elke gewenste bibliotheek in google maps te opene
 
 <img src="https://i.ibb.co/MNHyYdh/image.png">
 
-### 2.2 - Gebruikte technieken
-De website bevat op dit moment:
-- Een [NodeJS](https://nodejs.org/en/) server-side webpagina
-- Connectie met de [OBA-API](https://www.oba.nl/nieuws/hva-studenten-bouwen-zoekmachine-voor-de-oba.html)
-- Een [MapBox](https://www.mapbox.com/) kaart
-- Routering d.m.v. [routie](http://projects.jga.me/routie/) (libary)
+
 
 ## Hoofdstuk 3 | Waarom nu wel voldoende?
 Omdat dit de herkansing is, is het belangrijk te benoemen waarom ik vind dat het nu wel een voldoende waard is:
@@ -68,4 +70,4 @@ Omdat dit de herkansing is, is het belangrijk te benoemen waarom ik vind dat het
 - Routering d.m.v. routie (WAFS)
 - De gebruiker ontvangt feedback (loader)
 - Pagina ziet er netjes uit (CSS TO THE RESCUE)
-- extra: server-side rendering
+- extra: server-side rendering  
