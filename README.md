@@ -3,6 +3,8 @@
 ## Table of Content
 1. [Opdracht](#1)
 2. [Het product](#2)
+2.1 Workflow
+2.2 Gebruikte technieken
 3. [Waarom nu wel voldoende?](#3)
 
 <a name="1"></a>
@@ -12,7 +14,7 @@ _Omdat ik de week van project-1 helaas griep had, heb ik maar 1-2 dagen kunnen w
 
 De eerste projectweek speelt zich af in de Openbare bibliotheek Amsterdam. Wij krijgen als klas toegang tot de API van de OBA, waar veel verschillende data in staat opgeslagen. Denk hierbij aan beschikbaarheid van de boeken, dvd's of bijvoorbeeld de openingstijden. Hiermee hebben we de opdracht gekregen om een prototype te bouwen waarin we de bezoeker een hand kunnen helpen bij het zoeken van zijn/haar product.
 
-De opdracht van het project is: _een prototype bouwen dat bezoekers kan helpen om items uit de OBA collectie te vinden._
+De opdracht van het project is: **een prototype bouwen dat bezoekers kan helpen om items uit de OBA collectie te vinden.**
 
 Ik had hierbij meteen het idee om het de gebruiker zo makkelijk mogelijk te maken door middel van de dichstbijzijnde bibliotheek direct toe te wijzen. 
 Hoe ik dit waar heb gemaakt kunt u lezen in het volgende hoofdstuk
@@ -20,6 +22,8 @@ Hoe ik dit waar heb gemaakt kunt u lezen in het volgende hoofdstuk
 <a name="2"></a>
 
 ## Hoofdstuk 2 | Het product
+
+### 2.1  - Workflow
 _Om het product het beste uit te leggen heb ik hieronder de workflow beschreven (+screenshots)_
 
 **Hoofdpagina**
@@ -32,11 +36,8 @@ De klant bezoekt helpikhebsneleenboeknodig.nl
 
 De klant typt de naam/auteur van het boek in en de zoekopdracht worden netjes weergegeven.
 
-_feedback_
 
 <img src="https://i.ibb.co/PDYjvBb/image.png">
-
-_zoekresultaten_
 
 <img src="https://i.ibb.co/khvB319/image.png">
 
@@ -50,7 +51,7 @@ Ook heeft de klant de optie om elke gewenste bibliotheek in google maps te opene
 
 <img src="https://i.ibb.co/MNHyYdh/image.png">
 
-
+### 2.2 - Gebruikte technieken
 De website bevat op dit moment:
 - Een NodeJS server-side webpagina
 - Connectie met de OBA-API
