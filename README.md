@@ -26,13 +26,13 @@ Hoe ik dit waar heb gemaakt kunt u lezen in het volgende hoofdstuk
 ### 2.1  - Workflow
 _Om het product het beste uit te leggen heb ik hieronder de workflow beschreven (+screenshots)_
 
-**Hoofdpagina**
+**Stap 1: Hoofdpagina**
 
 De klant bezoekt helpikhebsneleenboeknodig.nl
 
 <img src="https://i.ibb.co/23SBssm/image.png">
 
-**Zoekopdracht**
+**Stap 2: Zoekopdracht**
 
 De klant typt de naam/auteur van het boek in en de zoekopdracht worden netjes weergegeven.
 
@@ -41,7 +41,7 @@ De klant typt de naam/auteur van het boek in en de zoekopdracht worden netjes we
 
 <img src="https://i.ibb.co/khvB319/image.png">
 
-**Resultaten Pagina** 
+**Stap 3: Waar ligt het boek?** 
 
 De klant drukt op het gewenste boek en krijgt meteen te zien waar het boek, het dichste bij, beschikbaar is (op een kaart).
 
@@ -53,24 +53,19 @@ Ook heeft de klant de optie om elke gewenste bibliotheek in google maps te opene
 
 ### 2.2 - Gebruikte technieken
 De website bevat op dit moment:
-- Een NodeJS server-side webpagina
-- Connectie met de OBA-API
-- Een MapBox kaart
+- Een [NodeJS](https://nodejs.org/en/) server-side webpagina
+- Connectie met de [OBA-API](https://www.oba.nl/nieuws/hva-studenten-bouwen-zoekmachine-voor-de-oba.html)
+- Een [MapBox](https://www.mapbox.com/) kaart
 - Routering d.m.v. [routie](http://projects.jga.me/routie/) (libary)
-
 
 ## Hoofdstuk 3 | Waarom nu wel voldoende?
 Omdat dit de herkansing is, is het belangrijk te benoemen waarom ik vind dat het nu wel een voldoende waard is:
 
 - Omdat ik tijdens de projectweek ziek was, heb ik toen (bijna) niks kunnen maken. Dit heb ik nu afgemaakt.
-- De doel van het project is belaald. (prototype bouwen waarin we de bezoeker een hand kunnen helpen met het zoeken van zijn/haar product)
+- De doel van het project (prototype bouwen waarin we de bezoeker een hand kunnen helpen met het zoeken van zijn/haar product) is belaald, en ik heb hierbij technieken van WAFS en CSS gebruikt (en zelfs nog extra). 
 - Het is mogelijk om boeken te zoeken (dus connectie met de OBA API)
 - Er wordt gebruik gemaakt van een mapbox om de bibliotheek locaties weer te geven.
 - Routering d.m.v. routie (WAFS)
+- De gebruiker ontvangt feedback (loader)
 - Pagina ziet er netjes uit (CSS TO THE RESCUE)
 - extra: server-side rendering
-
-
-
-Wat moet er nog gedaan worden : 
--bugfix minder dan 9 zoekresultaten
