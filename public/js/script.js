@@ -142,7 +142,7 @@ if(window.location.hash === "") {
                     var location = locations[i];
                 }
                 
-                var available = location['_attributes']['available'];
+                var available = location['_attributes']['available'];   
                 var name = location['_attributes']['name'];
 
                 availability.innerHTML = "available: " + available;
