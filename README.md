@@ -29,7 +29,7 @@ De website bevat op dit moment:
 - Connectie met de [OBA-API](https://www.oba.nl/nieuws/hva-studenten-bouwen-zoekmachine-voor-de-oba.html)
 - Een [MapBox](https://www.mapbox.com/) kaart
 - Routering d.m.v. [routie](http://projects.jga.me/routie/) (libary)
-- 
+  
 ### 2.2  - Workflow
 _Om het product het beste uit te leggen heb ik hieronder de workflow beschreven (+screenshots)_
 
