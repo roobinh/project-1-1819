@@ -63,7 +63,6 @@ Ook heeft de klant de optie om elke gewenste bibliotheek in google maps te opene
 ## Hoofdstuk 3 | Waarom nu wel voldoende?
 Omdat dit de herkansing is, is het belangrijk te benoemen waarom ik vind dat het nu wel een voldoende waard is:
 
-- Omdat ik tijdens de projectweek ziek was, heb ik toen (bijna) niks kunnen maken. Dit heb ik nu afgemaakt.
 - De doel van het project (prototype bouwen waarin we de bezoeker een hand kunnen helpen met het zoeken van zijn/haar product) is belaald, en ik heb hierbij technieken van WAFS en CSS gebruikt (en zelfs nog extra). 
 - Het is mogelijk om boeken te zoeken (dus connectie met de OBA API)
 - Er wordt gebruik gemaakt van een mapbox om de bibliotheek locaties weer te geven.
